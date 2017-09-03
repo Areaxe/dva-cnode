@@ -1,0 +1,33 @@
+@imgWidth: 30px;
+.comment_item{
+  border-top: solid 1px #bbb;
+  padding: .9375rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  .user_logo, .comment_base_info{
+    display: inline-block;
+    align-self: flex-start;
+  }
+  .user_name, .comment_time{
+    font-size: 0.875rem;
+    color: #333;
+  }
+  .user_name{
+    margin-right: 5px;
+    font-weight: bold;
+    color: #666;
+  }
+  .comment_base_info{
+    width:calc(~"100vw - @{imgWidth}");
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
+  .user_logo{
+    width: @imgWidth;
+  }
+  .comment_content{
+    font-size: 1rem;
+  }
+}

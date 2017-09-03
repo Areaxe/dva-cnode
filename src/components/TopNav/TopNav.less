@@ -1,0 +1,23 @@
+@theme-color:#3c3645;
+.nav_list{
+  background: @theme-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  li{
+    display: inline-block;
+    & a{
+      display: inline-block;
+      line-height: 3.75rem;
+      padding:0px 20px;
+      color: #f0f0f0;
+    }
+    &.selected,&:hover{
+      background: #f0f0f0;
+      cursor: pointer;
+      a{
+      color: @theme-color;
+      }
+    }
+  }
+}

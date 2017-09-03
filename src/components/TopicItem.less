@@ -1,10 +1,35 @@
 .topic_item{
-	border:solid 1px #999;
-	border-bottom:none;
-	padding:20px;
-	.topic_title{
-		font-size: 16px;
-		font-weight: normal;
-		color: #333;
+  @imgWidth: 30px;
+  border-bottom:solid 1px #e5e5e5;
+	padding:1.25rem;
+	display: flex;
+	flex-direction:row;
+  flex-wrap:nowrap;
+  align-items: stretch;
+  .user_logo,.topic_title{
+    display: inline-block;
+    align-self:flex-start;
+  }
+	.user_logo{
+   width:@imgWidth;
+   margin-right: 0.5rem;
 	}
+	.topic_title{
+    width:calc(~"100% - @{imgWidth}");
+    & h3{
+      font-size: 0.875rem;
+      font-weight: normal;
+      color: #333;
+    }
+  }
+  .topic_info{
+    display: flex;
+    justify-content: space-between;
+    span{
+      font-size: .5rem;
+      color: #bbb;
+      margin: 5px 5px 0 0;
+      line-height: 1em;
+    }
+  }
 }
