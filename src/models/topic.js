@@ -74,9 +74,9 @@ export default {
     // *upTopicComment({ reply_id }, { call, put, select }) {
     //   yield call(upTopicComment, { reply_id });
     // },
-    // *saveCurrentTab({ payload }, { put }) {
-    //   yield put({ type: 'save', payload: { currentTab: payload } });
-    // }
+    *saveCurrentTab({ payload }, { put }) {
+      yield put({ type: 'save', payload: { currentTab: payload } });
+    },
   },
 
   reducers: {

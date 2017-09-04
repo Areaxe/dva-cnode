@@ -11,6 +11,7 @@ const CommentItem = ({ comment }) => {
         <div>
           <span className={styles.user_name}>{com.author ? com.author.loginname : ''}</span>
           <span className={styles.comment_time}>{com.create_at ? com.create_at.split('T')[0] : ''}</span>
+          <span className={styles.ups_num}>{com.ups && com.ups.length ? com.ups.length : 0} 人赞了</span>
         </div>
         <div
           className={styles.comment_content}

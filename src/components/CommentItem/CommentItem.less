@@ -1,7 +1,7 @@
 @imgWidth: 30px;
 .comment_item{
-  border-top: solid 1px #bbb;
-  padding: .9375rem;
+  border-top: solid 1px #eee;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -14,8 +14,12 @@
     font-size: 0.875rem;
     color: #333;
   }
+  .comment_time,.ups_num{
+    font-size: .75rem;
+    color: #666;
+    margin-left: 10px;
+  }
   .user_name{
-    margin-right: 5px;
     font-weight: bold;
     color: #666;
   }
@@ -26,8 +30,10 @@
   }
   .user_logo{
     width: @imgWidth;
+    border-radius: 50%;
+    margin-right: 10px;
   }
   .comment_content{
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
